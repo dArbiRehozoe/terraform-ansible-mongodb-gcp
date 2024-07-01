@@ -1,0 +1,12 @@
+---
+- name: Install and configure MongoDB on Debian 11
+  hosts: label_environment_mongodb
+  become: true  # Run tasks with sudo
+  roles:
+    - role: installmongodb
+    - role: configuremongodb
+
+
+
+
+
